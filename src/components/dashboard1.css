@@ -1,0 +1,253 @@
+/* dashboard.css */
+* {
+    background-color: #ffffff;
+    max-width: 100%;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-container {
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(246, 236, 236);
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    background-color: white;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    background-color: white;
+  }
+  
+  .nav-link:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navbar-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+  
+    .navbar-nav.open {
+      display: flex;
+    }
+  
+    .nav-link {
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .nav-link {
+      padding: 8px 10px;
+    }
+  
+    .navbar-profile {
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .profile-picture {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  .dashboard {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .new-upload {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .new-upload:hover {
+    background-color: #0056b3;
+  }
+  
+  .searchbar {
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+  
+  .searchbar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters button {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .filters button:hover {
+    background-color: #e2e6ea;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  table thead th {
+    text-align: left;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  table tbody tr {
+    border-bottom: 1px solid #eee;
+  }
+  
+  table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  table tbody td {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  table tbody td.eye,
+  table tbody td.ai {
+    text-transform: capitalize;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 2px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard {
+      padding: 20px;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .new-upload {
+      margin-top: 10px;
+    }
+  
+    .filters {
+      flex-wrap: wrap;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  }
+  

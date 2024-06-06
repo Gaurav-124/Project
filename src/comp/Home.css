@@ -1,0 +1,119 @@
+.retinoscan-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+  }
+  
+  .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .sign-in-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .divider span {
+    margin: 0 10px;
+    color: #666666;
+  }
+  
+  .create-account-btn {
+    background-color: #a5bcc9;
+    color: #0d0a0a;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .content {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-logo {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 18px;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
